@@ -1,0 +1,54 @@
+how to create class and object 
+
+1.class - blueprint where it holds attributes and methods
+
+ex- human beings (attributes-name,height,weight,...)(functions/methods-waking time,working time,reading time)
+-this particular class defines the humanbeing in a whole 
+-this is generic
+-to convert this generic class into specific below the class we create object(desired subclass)
+
+usecase: i want to hide sensitive data so others cant directly access or change it
+
+{
+atm_pin = "3456"
+print(atm_pin)
+}
+
+it directly prints the atm pin here it is not protected and accessed directly
+
+class secureuser:  #class
+    name = xxx
+    acc_no = 3574378237957
+    atm_pin = 3465
+
+    def __init__(self , name , atm_pin):   # init is a constrcutor method whenever ur trying to create a obj for a particular class it searches for init which is a constrcuctor class to see which needs to execute first.
+        self.name = name 
+        self._atm_pin = atm_pin
+
+    def get_pin(self ,attempt):  #method , self refer to the current object
+        if attempt == self.atm_pin
+            def deposit_cash(self): # def=functions
+                pass
+
+            def cash_withdrawal(self):
+                pass
+        else:
+        for iin range (0,4):
+        return "your password is incorrect"
+user_data= secureuser("ravi",6789) 
+
+PUBLIC:
+if i access atm_pin it directly prints output pin(not protected) PUBLIC
+then when i add single underscore _atm_pin
+PRIVATE:
+when i use double underscore i cannot access it from outside the class __atm_pin PRIVATE
+
+ENCAPSULATION : RESTRICTING DIRECT ACCESS TO THE INTERNAL STATE
+
+ABSTRACTION :
+ it hides the unneceray methouds from the users
+ abstract clas is nothing but a rule book
+ it uses abc - abstraction base class
+
+INHERITANCE :
+
